@@ -32,7 +32,7 @@ export default function MarioGame() {
         pipe.style.animation = "none";
         pipe.style.left = `${pipePosition}px`;
 
-        mario.src = gameOver; // Usando a importação correta
+        mario.src = gameOver; 
 
         setIsGameOver(true);
         clearInterval(loop);
@@ -60,7 +60,7 @@ export default function MarioGame() {
         <Clouds src={clouds} alt="nuvens" />
         <Mario
           ref={marioRef}
-          src={isGameOver ? gameOver : marioGif} // Troca a imagem do Mario se o jogo terminar
+          src={isGameOver ? gameOver : marioGif} 
           alt="gif do mario"
           isJumping={isJumping}
           isGameOver={isGameOver}
